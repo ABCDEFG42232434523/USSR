@@ -9,7 +9,17 @@
 
     <!--JavaScript-->
     <script>
-        //alert('联盟官网欢迎您~')
+        alert('联盟官网欢迎您~')
+        var LS_JS = true
+        var Down = function() {
+          if (LS_JS) {
+            document.getElementById("lis-text").innerHTML = "还没有~~~"
+            LS_JS = false
+          }
+          else {
+            document.getElementById("lis-text").innerHTML = ""
+          }
+        }
     </script>
 
     <!--CSS-->
@@ -22,6 +32,10 @@
             background-color: gray;
             width: 50%;
         }
+        button-zk{
+          color: red;
+          
+        }
     </style>
     
   </head>
@@ -29,19 +43,19 @@
   <body>
     <div class="title">
        <h1><i>苏维埃社会主义人民共和国联盟官方网站</i></h1>
+       <p>还没有开发完成</p>
     </div>
     <hr/>
 
     <div>
         <div>
-                <p>联盟发展历史：</p>
-                <button>展开</button>
+            <p>联盟发展历史：</p>
+            <button id="button-zk" onclick="Down()">展开</button>
+            <div id="lis-text">
+            </div>
         </div>
         <div>
-                <h1>勋多多的帅照</h1>
-                <img src="image.bmp"/>
-        </div>
-        <div class="jShao"></div>
+                
     </div>
 
     <div>
